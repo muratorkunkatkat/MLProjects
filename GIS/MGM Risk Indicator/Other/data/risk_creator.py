@@ -46,7 +46,7 @@ def get_limit_temperature(fruit, date, severity):
     md = (date.month, date.day)
 
     if severity == "10percent":
-        """
+        
         if fruit == "peach":
             if (2, 20) <= md <= (3, 5): return -7.7
             if (3, 6) <= md <= (3, 15): return -6.1
@@ -62,11 +62,11 @@ def get_limit_temperature(fruit, date, severity):
             if (3, 11) <= md <= (3, 20): return -2.8
             if (3, 21) <= md <= (4, 15): return -1.1
             return -18.0
-            """
+            
         return 0
 
     if severity == "90percent":
-        """
+        
         if fruit == "peach":
             if (2, 20) <= md <= (3, 5): return -17.2
             if (3, 6) <= md <= (3, 15): return -15.0
@@ -82,7 +82,7 @@ def get_limit_temperature(fruit, date, severity):
             if (3, 11) <= md <= (3, 20): return -5.0
             if (3, 21) <= md <= (4, 15): return -4.5
             return -25.0
-            """
+            
 
         return -2
 
