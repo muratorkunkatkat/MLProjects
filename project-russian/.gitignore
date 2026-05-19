@@ -1,0 +1,18 @@
+# .gitignore
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Sensitive information (if you decide to use .env later for the bot token)
+.env
