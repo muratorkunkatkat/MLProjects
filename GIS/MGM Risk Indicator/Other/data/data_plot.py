@@ -107,7 +107,13 @@ for ilce in ilceler:
 
         plt.tight_layout()
         plt.subplots_adjust(top=0.85)
-        plt.show()
+        
+        # Create output directory if it doesn't exist yet
+        os.makedirs("plots", exist_ok=True)
+        
+        # Save the plot directly into the folder and close the figure context
+        plt.savefig(f"plots/{norm_name}_distribution.png", dpi=150)
+        plt.close(fig)
 
         print(f"{'Day':<5}{'Distribution':<15}{'StDev':<15}{'Scale':<15}")
 
